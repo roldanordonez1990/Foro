@@ -62,8 +62,6 @@ public class ServletBorrar extends HttpServlet {
 		ArrayList<Mensaje> mensajes = ControladorFicherosMensajes.leerFicheroMensajes(ficheroMensaje);
 		Mensaje men = null;
 		for (Mensaje m : mensajes) {
-System.out.println(m.getId());
-System.out.println(boton);
 
 			if (m.getId() == boton) {
 				men = m;
